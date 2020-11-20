@@ -1,0 +1,89 @@
+// Variables //
+
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
+
+
+// Global Settings //
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Specific Styling //
+
+.showcase {
+    background-color: $primary-color;
+    color: $light-color;
+    height: 80%;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 15px;
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
+    }
+
+    a {
+        color: $light-color;
+    }
+    // Showcase-Content Styling //
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+
+        p {
+            margin: 20px 0;
+            width: 60%;
+        }
+    }
+}
+
+.container {
+    max-width: 80%;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+}

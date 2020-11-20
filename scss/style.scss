@@ -1,10 +1,6 @@
-// Variables //
-
-$font-stack: Arial, Helvetica, sans-serif;
-$light-color: #f4f4f4;
-$primary-color: #0e6cff;
-$secondary-color: #ff8700;
-
+@import 'config';
+@import 'utilities';
+@import 'buttons';
 
 // Global Settings //
 * {
@@ -32,8 +28,7 @@ a {
 // Specific Styling //
 
 .showcase {
-    background-color: $primary-color;
-    color: $light-color;
+    @include set-background($primary-color);
     height: 80%;
 
     nav {
@@ -79,11 +74,4 @@ a {
             width: 60%;
         }
     }
-}
-
-.container {
-    max-width: 80%;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: auto;
 }
